@@ -1,0 +1,58 @@
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Border flexbox*/
+section {
+    border: 2px dashed #A4036F;
+    /*    display: flex;
+        flex-direction: row;
+        justify-content: flex-start;*/
+}
+
+ul {
+    border: 2px dashed #048BA8;
+    /*  list-style: none;*/
+    /* display: flex;*/
+    /*flex-direction: row;*/
+    /*   flex-basis: 800px;*/
+}
+
+li {
+    border: 2px dashed #16DB93;
+}
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
