@@ -11,6 +11,9 @@
         etc.
     5. Media Queries
 ////////////////////////*/
+
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
 /*css reset*/
 * {
     margin: 0;
@@ -19,40 +22,216 @@
 }
 
 /*Border flexbox*/
-section {
-    border: 2px dashed #A4036F;
-    /*    display: flex;
-        flex-direction: row;
-        justify-content: flex-start;*/
+header,article,nav,span {
+   /* border: 2px dashed red;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: flex-start;*/
 }
-
-ul {
-    border: 2px dashed #048BA8;
-    /*  list-style: none;*/
-    /* display: flex;*/
-    /*flex-direction: row;*/
-    /*   flex-basis: 800px;*/
+body{
+    /*border: 2px dashed green;*/
+}
+ul, {
+   /* border: 2px dashed deeppink;*/
+/*     list-style: none;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-basis: 800px;*/
 }
 
 li {
-    border: 2px dashed #16DB93;
+  /*  border: 2px dashed orange;*/
 }
 
-/* ------------------------------- 1. Global Styles -------------------------------- */
+
+/* ------------------------------- fonts and collors ----------------------------------- */
+/*Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);*/
+body {
+  /*  max-width: 1000PX;*/
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather', serif;
+ }
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --------------- Header ------------------------- */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+/*    max-width: 1000px;*/
+    text-align: center;
+    background-image: linear-gradient(90deg, #4845E4, #5722CD);
+    color: #F2F0FF;
+    padding: 60px;
+}
+li {
+    padding-right: 20px;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-image: linear-gradient(90deg, #4845E4, #5722CD);
+    color: #F2F0FF;
+}
+.nav-items{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    max-width: 1000px;
+    padding: 10px;
 
 
-/* ------------------------------- 2. Typography ----------------------------------- */
-
-/* ------------------------------- 3. Layout --------------------------------------- */
-
-/* --------------- 3.1 Reusables ----------------------- */
-
-/* --------------- 3.2 Other --------------------------- */
-
-/* ------------------------------- 4. Areas ---------------------------------------- */
-
-/* --------------- 4.1 Header ------------------------- */
+}
+.header-tekst {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   /* max-width: 1000px;*/
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.header-title {
+    padding-bottom: 20px;
+}
+.header-sub {
+    padding-bottom: 20px;
+}
+.header-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    background-color: #ED4385;
+    color: #F2F0FF;
+}
 
 /* --------------- 4.2 Introduction ------------------- */
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #5722CD;
+}
+.question {
+    text-align: center;
+}
+/* ------------------------------- case studies -------------------------------- */
+.case {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.case-studies-1 {
+    display: flex;
+    flex-direction: row-reverse;
 
-/* ------------------------------- 5. Media Queries -------------------------------- */
+}
+image {
+    max-width: 100%;
+}
+
+.image-wrapper {
+    flex-basis: 400px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+
+/* ------------------------------- services -------------------------------- */
+h3 {
+    color: #5722CD;
+}
+image {
+    width: 22px;
+
+}
+.container-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: left;
+    list-style: none;
+
+}
+.icons {
+    padding: 5px;
+    width: 60px;
+}
+.box {
+    border: solid #5722CD;
+    flex-basis: 250px;
+    margin: 10px;
+    padding: 10px;
+    color: #7A7A7A;
+    font-size: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    flex-grow: 4;
+    flex-shrink: 0;
+}
+/* ------------------------------- contact -------------------------------- */
+.form-title {
+    margin-top: 40px;
+}
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    color: #F2F0FF;
+    background-image: linear-gradient(90deg, #4845E4, #5722CD);
+
+}
+.container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+
+}
+.form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+    background-color: #ED4385;
+    color: #F2F0FF;
+}
+/* ------------------------------- footer -------------------------------- */
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    color: #F2F0FF;
+    background-color: #0C0C0C;
+
+}
